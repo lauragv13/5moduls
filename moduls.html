@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>moduls</title>
+    <style type="text/css">
+        *{
+            margin: 0;
+            padding:0;
+        }
+        body{
+            background: rgb(120,200,150);
+        }
+        .container,.container2,.container3,.container4{
+            border: 2px solid white;
+            margin:2em;
+            display: flex;   
+        }
+        .f1,.f2,.f3,.f4{
+            display:flex;
+            flex-grow:1;
+            width: 100%;
+        }
+        p{
+            border-radius: 1em;
+            text-align: center;
+            margin: 0.2em;
+            padding: 2em;
+            background:rgba(100,25,200,0.5);
+            flex-grow: 1;
+        }
+        .f1 p, .f3 p{
+            flex-grow: 1;
+        }
+        .f2{
+            flex-grow: 1;
+        }
+        #set {
+            flex-grow: 0.5;
+            background: orange;
+        }
+        #huit{
+           flex-grow: 0.5;
+           background: orange; 
+        }
+        .f4 p:nth-child(3), .f4 p:nth-child(4), .f4 p:nth-child(5){
+            flex-grow: 0.33;
+            background: blue;
+        }
+        .f4 p:nth-child(6), .f4 p:nth-child(7){
+            flex-grow: 0.5;
+            background: yellow;
+        }
+    </style>
+</head>
+<body>
+   <main class="container">
+       <div class="f1">
+       <p>1</p>
+       <p>2</p>
+       <p>3</p>
+       <p>4</p>
+   </div>
+    </main>
+   <main class="container2">
+   <div class="f2">
+       <p>5</p>
+       <p>6</p>
+       <p id="set">7</p>
+       <p id="huit">8</p>
+       <p>9</p>
+   </div>
+   </main>
+   <main class="container3">
+   <div class="f3">
+       <p>10</p>
+       <p>11</p>
+       <p>12</p>
+       <p>13</p>
+   </div>
+   </main>
+   <main class="container4">
+   <div class="f4">
+       <p>14</p>
+       <p>15</p>
+       <p>16</p>
+       <p>17</p>
+       <p>18</p>
+       <p>19</p>
+       <p>20</p>
+   </div>
+   </main>   
+</body>
+</html>
